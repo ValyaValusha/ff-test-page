@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <input type="text" [(ngModel)]="category" placeholder="Find jokes"/>
+    <button class="bg-light"
+            (click)="findJokes()">Submit
+    </button>
+    <app-loader [isLoading]="isLoading"></app-loader>
+  </div>
+  <div class="container jokes-container">
+    <p translate>Chucknorris found:</p>
+    <ol>
+      <li class="blocquote jokes-container-item" *ngFor="let joke of jokes">{{joke.value}}</li>
+    </ol>
+  </div>
+</div>
+

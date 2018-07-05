@@ -1,0 +1,10 @@
+.jokes-container {
+  display: flex;
+  flex-direction: column;
+
+  &-item {
+    margin: 15px;
+    padding: 15px;
+    border: 1px dashed black;
+  }
+}
